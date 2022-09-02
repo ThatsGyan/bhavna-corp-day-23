@@ -1,0 +1,25 @@
+namespace MethodOverloading
+{
+    class Program
+    {
+
+        //same class different Method
+            void sum(int a, int b)
+        {
+            Console.WriteLine(a + b);
+        }
+
+        void sum(float a ,float b)
+        {
+            Console.Write(a + b);
+        }
+
+        static void Main(string[] args)
+        {
+            Program obj = new Program();
+            obj.sum(10, 200);
+            obj.sum(103.5f, 11.5f);
+            Console.ReadLine();
+        }
+    }
+}
